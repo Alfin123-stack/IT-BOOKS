@@ -1,0 +1,18 @@
+footer{
+    margin-top: 5rem;
+    width: 100%;
+    background-color: rgb(19, 75, 114);
+    padding: 1rem;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+}
