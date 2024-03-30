@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -71,7 +70,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new MiniCssExtractPlugin(),
-    new OptimizeCssAssetsPlugin()
+    new MiniCssExtractPlugin()
   ]
 }
